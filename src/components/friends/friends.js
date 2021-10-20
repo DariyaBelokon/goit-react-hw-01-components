@@ -20,3 +20,4 @@ Friends.propTypes = {
   friends: PropTypes.arrayOf(PropTypes.shape),
   id: PropTypes.number,
 };
+// проверка
