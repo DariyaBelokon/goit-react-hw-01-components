@@ -8,9 +8,14 @@ export default function Friends({ friends }) {
         const { name, avatar, isOnline, id } = friend;
 
         return (
-          <li key={id} className={s.item}>
-            <FriendItem name={name} avatar={avatar} isOnline={isOnline} />
-          </li>
+          <>
+            <FriendItem
+              name={name}
+              avatar={avatar}
+              isOnline={isOnline}
+              id={id}
+            />
+          </>
         );
       })}
     </ul>
@@ -18,6 +23,4 @@ export default function Friends({ friends }) {
 }
 Friends.propTypes = {
   friends: PropTypes.arrayOf(PropTypes.shape),
-  id: PropTypes.number,
 };
-// проверка
